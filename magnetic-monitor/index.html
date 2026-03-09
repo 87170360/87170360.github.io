@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>地磁检测 | Magnetic Monitor</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --border: #dbe3f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 180px);
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(32px, 5vw, 44px);
+      line-height: 1.12;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.75;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .item {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .item h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .item p { font-size: 15px; }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="badge">iOS App</div>
+      <h1>地磁检测<br>Magnetic Monitor</h1>
+      <p>地磁检测是一款用于地磁数据采集与分析的 iPhone 应用，支持实时采样、历史记录查看与数据导出，适用于地震观测、地球物理教学与野外磁场调查等场景。</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/%E5%9C%B0%E7%A3%81%E6%A3%80%E6%B5%8B/id6758705432">在 App Store 查看</a>
+        <a class="btn btn-secondary" href="https://eight-peanut-fde.notion.site/2fd83f433984804d816efc2bb7aaf671">技术支持</a>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="features">
+      <article class="item">
+        <h2>实时采集</h2>
+        <p>使用设备磁力计获取磁场数据，适合现场快速记录与趋势观察。</p>
+      </article>
+      <article class="item">
+        <h2>历史管理</h2>
+        <p>保存采样点并回看详情，便于复盘不同地点与时间段的数据变化。</p>
+      </article>
+      <article class="item">
+        <h2>导出分享</h2>
+        <p>支持导出 JSON 与 CSV，方便进一步研究、归档与协作使用。</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Publisher verification page for AdMob and App Store marketing URL.</p>
+    </footer>
+  </main>
+</body>
+</html>
